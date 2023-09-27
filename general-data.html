@@ -28,168 +28,258 @@
   </head>
   <body>
     <!-- nav bar -->
-   <div class="nav-bar">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="mida/شفيعا1.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar lets">
+      <div class="d-flex w-25"></div>
+      <div class="dropdown d-inline-block">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <div class="img-text">
+            <img src="mida/baby.png" class="admin_img" alt="person" />
+            <h4>أحمد أمجد</h4>
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> <img src="mida/baby.png" alt="">أحمد أمجد</a>
-            </li>
-           
-          </ul>
-        
-        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item" href="Reports-on-the-Shafia-platform.html"
+              >Reports</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="General-Settings.html">Setting</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
       </div>
     </nav>
-   </div>
-   <!-- nav bar -->
-   <!-- content -->
-   <section class="content">
-    <div class="container">
-      <div class="form">
-       
-        <div class="row">
-          
-          <div class="col-lg-7 col-md-12 col-12">
-         <div class="main-data">
-          <div class="main-tittle">
-            <h4>البيانات العامة</h4>
-            <h5>البيانات الشخصية<span><hr></span></h5>
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">تاريخ الميلاد</label>
-            <input  class="form-control"  type="text" placeholder="ادخل تاريخ ميلادك"
-        onfocus="(this.type='date')"
-        onblur="(this.type='text')">
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">رقم هوية الطالب</label>
-            <input  type="tel" class="form-control" placeholder="ادخل رقم هوية الطالب">
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">نوع الهوية</label>
-            <select class="selectpicker">
-              <option value="" disabled selected hidden>اختر نوع الهوية</option>
-              <option>0</option>
-              <option>0</option>
-              <option>0</option>
-            </select>
-            
-        </div>
-          <div class="form-group">
-            <label class="grenal" for="">الجنس</label>
-            <select class="selectpicker">
-              <option value="" disabled selected hidden>اختر النوع</option>
-              <option>0</option>
-              <option>0</option>
-              <option>0</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">اسم ولى الأمر</label>
-            <input type="text" class="form-control" placeholder="ادخل اسم ولى الأمر">
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">رقم ولى الأمر</label>
-            <input type="tel" class="form-control" placeholder="ادخل رقم ولى الأمر">
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">صلة القرابة</label>
-           <div class="radio">
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="grenal" for="inlineRadio1">أب</label>
+    <!-- nav bar -->
+    <!-- content -->
+    <section class="content">
+      <div class="container">
+        <div class="form">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-12">
+              <div class="main-data">
+                <div class="main-tittle">
+                  <h4>البيانات العامة</h4>
+                  <h5>
+                    البيانات الشخصية<span><hr /></span>
+                  </h5>
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">تاريخ الميلاد</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="ادخل تاريخ ميلادك"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">رقم هوية الطالب</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="ادخل رقم هوية الطالب"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">نوع الهوية</label>
+                  <select class="selectpicker">
+                    <option value="" disabled selected hidden>
+                      اختر نوع الهوية
+                    </option>
+                    <option>0</option>
+                    <option>0</option>
+                    <option>0</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">الجنس</label>
+                  <select class="selectpicker">
+                    <option value="" disabled selected hidden>
+                      اختر النوع
+                    </option>
+                    <option>0</option>
+                    <option>0</option>
+                    <option>0</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">اسم ولى الأمر</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ادخل اسم ولى الأمر"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">رقم ولى الأمر</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="ادخل رقم ولى الأمر"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">صلة القرابة</label>
+                  <div class="radio">
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="grenal" for="inlineRadio1">أب</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="grenal" for="inlineRadio2">أم</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio3"
+                        value="option2"
+                      />
+                      <label class="grenal" for="inlineRadio3">أخ</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio3"
+                        value="option2"
+                      />
+                      <label class="grenal" for="inlineRadio3">قريب</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio4"
+                        value="option2"
+                      />
+                      <label class="grenal" for="inlineRadio4">أخري</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-tittle">
+                  <h5>بيانات التعلم</h5>
+                  <span><hr /></span>
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">قابلة الطالب على التعلم</label>
+                  <select class="selectpicker">
+                    <option value="" disabled selected hidden>
+                      اختر النوع
+                    </option>
+                    <option>0</option>
+                    <option>0</option>
+                    <option>0</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for="">طريقة الحفظ المناسبة</label>
+                  <div class="radio">
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptionsz"
+                        id="inlineRadioa"
+                        value="option1"
+                      />
+                      <label class="grenal" for="inlineRadioa">استماع</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptionsz"
+                        id="inlineRadios"
+                        value="option2"
+                      />
+                      <label class="grenal" for="inlineRadios">تلقين</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptionsz"
+                        id="inlineRadiod"
+                        value="option3"
+                      />
+                      <label class="grenal" for="inlineRadiod">حفظ</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptionsz"
+                        id="inlineRadiof"
+                        value="option4"
+                      />
+                      <label class="grenal" for="inlineRadiof">كتابة</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptionsz"
+                        id="inlineRadiog"
+                        value="option5"
+                      />
+                      <label class="grenal" for="inlineRadiog"
+                        >لغة الاشارة</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="grenal" for=""
+                    >مقدرا الحفظ السابق عدد السور</label
+                  >
+                  <select class="selectpicker">
+                    <option value="" disabled selected hidden>
+                      اختر النوع
+                    </option>
+                    <option>0</option>
+                    <option>0</option>
+                    <option>0</option>
+                  </select>
+                </div>
+                <div class="botton">
+                  <button type="button" class="btn construction">
+                    ابدأ الآن
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="grenal" for="inlineRadio2">أم</label>
+            <div class="col-lg-5 col-md-12 col-12">
+              <img class="bent" src="mida/el pent.png" alt="" />
             </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-              <label class="grenal" for="inlineRadio3">أخ</label>
-            </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-              <label class="grenal" for="inlineRadio3">قريب</label>
-            </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
-              <label class="grenal" for="inlineRadio4">أخري</label>
-            </div>
-           </div>
-          </div>
-          <div class="main-tittle">
-            <h5>بيانات التعلم</h5>
-            <span><hr></span>
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">قابلة الطالب على التعلم</label>
-            <select class="selectpicker">
-              <option value="" disabled selected hidden>اختر النوع</option>
-              <option>0</option>
-              <option>0</option>
-              <option>0</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">طريقة الحفظ المناسبة</label>
-           <div class="radio">
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptionsz" id="inlineRadioa" value="option1">
-              <label class="grenal" for="inlineRadioa">استماع</label>
-            </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptionsz" id="inlineRadios" value="option2">
-              <label class="grenal" for="inlineRadios">تلقين</label>
-            </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptionsz" id="inlineRadiod" value="option3">
-              <label class="grenal" for="inlineRadiod">حفظ</label>
-            </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptionsz" id="inlineRadiof" value="option4">
-              <label class="grenal" for="inlineRadiof">كتابة</label>
-            </div>
-            <div class=" form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptionsz" id="inlineRadiog" value="option5">
-              <label class="grenal" for="inlineRadiog">لغة الاشارة</label>
-            </div>
-           </div>
-          </div>
-          <div class="form-group">
-            <label class="grenal" for="">مقدرا الحفظ السابق عدد السور</label>
-            <select class="selectpicker">
-              <option value="" disabled selected hidden>اختر النوع</option>
-              <option>0</option>
-              <option>0</option>
-              <option>0</option>
-            </select>
-          </div>
-          <div class="botton">
-            <button type="button" class="btn construction">
-              ابدأ الآن
-            </button>
-          </div>
-         </div>
-          </div>
-          <div class="col-lg-5 col-md-12 col-12">
-            <img class="bent" src="mida/el pent.png" alt="">
           </div>
         </div>
       </div>
-    </div>
-   </section>
-    
-   
-
-
+    </section>
 
     <script src="js/main.js"></script>
   </body>
