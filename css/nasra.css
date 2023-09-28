@@ -586,7 +586,7 @@ a.nav-link.active {
   
 }
 .sidebar .nav-pills .nav-item .nav-link.active span {
-  font-family: "bold";
+  font-family: "regular";
   color:#576B74;
   display: none;
   font-family: 0.8rem;
@@ -670,7 +670,7 @@ button#dropdownMenuButton1 {
     height: 100%;
 }
 .content-main-lib {
-  padding: 5rem 0;
+  padding: 1rem 0;
     min-height: 100vh;
     height: 100%;
     background-color: #d0d0d038;
@@ -750,7 +750,8 @@ footer img {
 ul#myTab\ educat {
   background-color:#06797ea3;
   padding: 0;
-  text-align: center
+  text-align: center;
+  margin-top: 50px;
 }
 .main-lib {
   background-image: url(../mida/bac.png);
@@ -955,6 +956,12 @@ nav.navbar.navbar-expand-lg.edu {
 .text-pic{
   display: flex;
 
+}
+svg.svg-inline--fa.fa-lock-open.set {
+  position: absolute;
+  top: 130px;
+  right: 12px;
+  color: #575a598f;
 }
 .img-det img {
   width: 100%;
@@ -1250,6 +1257,7 @@ button.btn.btn-jion:hover {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   padding: 0.5rem 1rem;
+  gap: 10px;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: rgba(6, 121, 126, 0.1);
@@ -1651,28 +1659,31 @@ input.form-control {
 svg.svg-inline--fa.fa-phone.te {
   position: absolute;
   top: 99px;
-  color: #575A59;
+  color:#575a596b ;
 }
 .name {
   position: relative;
 }
 .name svg {
-  color: #575A59;
+  color:#575a596b ;
 }
 svg.svg-inline--fa.fa-user.po {
   position: absolute;
   top: 14px;
   right: 13px;
+  color:#575a596b ;
 }
 svg.svg-inline--fa.fa-phone.te {
   position: absolute;
   top: 75px;
   right: 13px;
+  color:#575a596b ;
 }
 svg.svg-inline--fa.fa-envelope.ma {
   position: absolute;
   top: 133px;
   right: 13px;
+  color:#575a596b ;
 }
 .crad-lesson-set {
   margin-top: 43px;
@@ -1945,6 +1956,28 @@ label.label-wazerd {
 }
 
 /* wazer */
+.modal-body.out {
+  text-align: center;
+}
+.modal-body.out h4 {
+ font-family: "regular";
+}
+button.btn.PrimaryButton {
+  margin-top: 10px;
+  background-color: #06797E;
+  color: white;
+  font-family: "regular";
+  transition: 0.7s;
+}
+button.btn.PrimaryButton:hover{
+ 
+  background-color: white;
+  color: #06797E;
+ border: 1px solid #06797E;
+}
+.modal-dialog.out {
+  margin-top: 215px;
+}
 
 /* footer */
  .end-page {
@@ -1994,6 +2027,49 @@ label.label-wazerd {
   margin: 0 0.5rem;
   font-family: "regular";
 }
+.main-super {
+  padding: 3rem 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-poin h4 {
+  font-size: 0.9rem;
+  font-family: "regular";
+  color: #B2D23F;
+}
+.text-poin h3 {
+  font-size:2rem;
+  font-family: "bold";
+  margin-top: 30px;
+  color: #B2D23F;
+}
+svg.svg-inline--fa.fa-circle-play.setii {
+  font-size: 1.5rem;
+}
+.crad-lesson-achievement {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.crad-lesson-achievement-1 {
+  margin-top: 20px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.lasts-achievement {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+div#out {
+  z-index: 111111111111111111;
+}
+nav.navbar.navbar-expand-lg.img-nav.bg-white {
+    box-shadow: 0px 1px 1px 0px #0000000f;
+}
 /* responsev */
 @media only screen and (max-width: 1500px) {
 }
@@ -2009,7 +2085,7 @@ label.label-wazerd {
     padding-right: 31px;
   }
   .img-librar img {
-    width: 60%;
+    width: 90%;
     margin-right: 115px;
 }
 a.img-librar-1 img {
@@ -2028,6 +2104,9 @@ nav.nav.navbar.lib .log {
 }
 }
 @media only screen and (max-width: 600px) {
+  .all {
+    padding: 0;
+  }
   .made {
     flex-wrap: wrap;
   }
@@ -2116,7 +2195,7 @@ nav.nav.navbar.lib .log {
     font-size: 0.4rem;
 }
 .sidebar.open, .sidebar.opened {
-    width: 38%;
+    width: 19%;
     background-image: unset;
     box-shadow: unset;
 }
@@ -2155,13 +2234,13 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 .img-librar img {
   margin-top: 1rem;
-  width: 60%;
-  margin-right: 45px
+  width: 90%;
+  margin-right: 13px
 }
 a.img-librar-1 img {
   margin-top: 1rem;
-  width: 60%;
-  margin-right: 45px
+  width: 90%;
+  margin-right: 13px
 }
 button#dropdownMenuButton1 {
   margin-top: -38px;
@@ -2235,7 +2314,7 @@ nav.navbar.navbar-expand-lg.edu {
 }
 
 .content-main-lib {
-  padding: 2rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 .video-quran {
   margin-top: 1rem;
@@ -2302,7 +2381,101 @@ iframe {
   width: 100%;
   height: 100%;
 }
+.sidebar .nav-pills .nav-item {
+  width: 2.8rem;
+}
+.img-nav .collapse .left svg {
+  font-size: 0.5rem;
+}
 
+.made {
+  font-size: 0.7rem;
+}
+.main-lib-reder {
+  padding: 1rem 1rem;
+}
+.main-lib {
+  padding: 1rem 1rem;
+}
+.main-lib-conts {
+  padding: 1rem 1rem;
+}
+.content-contest h4 {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.text-co h6 {
+  font-size: 0.8rem;
+}
+.p-con h6 {
+  font-size: 0.8rem;
+}
+.avatar-upload .avatar-preview {
+  height: 100px;
+}
+.form-group.setiting {
+  margin-top: 29px;
+  margin-right: 11px;
+}
+svg.svg-inline--fa.fa-user.po {
+  top: 10px;
+    right: 8px
+}
+svg.svg-inline--fa.fa-phone.te {
+  top: 55px;
+    right: 8px;
+}
+svg.svg-inline--fa.fa-envelope.ma {
+  top: 98px;
+    right: 8px;
+}
+.tab-of-masseges {
+  flex-wrap: wrap;
+
+}
+.bord {
+  width: 100%;
+}
+.chat-of-massege {
+  width: 100%;
+  border: unset;
+}
+svg.svg-inline--fa.fa-lock {
+  top: 55px;
+}
+svg.svg-inline--fa.fa-lock-open.set {
+  position: absolute;
+  top: 97px;
+  right: 5px;
+}
+.img-notification img {
+  width: 70%;
+}
+.notification {
+  padding:0.5rem
+}
+.notification .details-notification h5 {
+  font-size: 0.6rem;
+}
+.notification .details-notification p {
+  font-size: 0.6rem;
+}
+.main-tittle h4 {
+  font-size: 0.9rem;
+}
+.main-tittle h5 {
+  margin-top: 0.8rem;
+ 
+}
+label.grenal {
+  font-size: 0.9rem;
+}
+.main-super {
+  flex-wrap: wrap;
+}
+svg.svg-inline--fa.fa-circle-play.setii {
+  font-size: 1rem;
+}
 }
 
 /* responsev */

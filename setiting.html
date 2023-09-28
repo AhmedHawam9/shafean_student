@@ -36,35 +36,42 @@
           id="menu"
         >
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="let's-go.html" class="nav-link align-middle">
               <i class="fa-solid fa-house"></i>
               <span>الرئيسية</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="Educational-library.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book"></i>
+              <span>المكتبة التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Electronic-reader.html" class="nav-link align-middle">
               <i class="fa-solid fa-video"></i>
-              <span>المقرأة</span>
+              <span>المقرأة الالكترونية</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
-              <i class="fa-solid fa-people-group"></i>
-              <span>المجموعات</span>
+            <a href="the-exams.html" class="nav-link align-middle">
+              <i class="fa-solid fa-file-contract"></i>
+              <span>الاختبارات</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="Contests.html" class="nav-link align-middle">
+              <i class="fa-solid fa-tarp-droplet"></i>
+              <span>المسابقات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Achievements.html" class="nav-link align-middle">
               <i class="fa-solid fa-list-check"></i>
               <span>الانجازات</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
-              <i class="fa-solid fa-file-lines"></i>
-              <span>الاختبارات</span>
-            </a>
-          </li>
+
           <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-circle-exclamation"></i>
@@ -85,8 +92,19 @@
           </li>
           <li class="nav-item">
             <a href="setiting.html" class="nav-link align-middle">
-                <i class="fa-solid fa-gear"></i>
+              <i class="fa-solid fa-gear"></i>
               <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link align-middle"
+              data-bs-toggle="modal"
+              data-bs-target="#out"
+            >
+              <i class="fa-solid fa-right-from-bracket out"></i>
+              <span>تسجيل الخروج</span>
             </a>
           </li>
         </ul>
@@ -96,40 +114,66 @@
       <!-- ======= Main ======= -->
       <section class="index_cards">
         <!-- ======= Start navbar ======= -->
-        <nav class="navbar lets">
-          <div class="d-flex w-25">
+        <nav class="navbar navbar-expand-lg img-nav bg-white">
+          <div class="container">
             <div class="menu">
               <i class="fa-solid fa-bars"></i>
             </div>
-          </div>
-          <div class="dropdown d-inline-block">
+            <a class="navbar-brand" href="#"
+              ><img src="img/title.png" alt=""
+            /></a>
             <button
-              class="btn dropdown-toggle"
+              class="navbar-toggler"
               type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
               aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <div class="img-text">
-                <img src="mida/baby.png" class="admin_img" alt="person" />
-                <h4>أحمد أمجد</h4>
-              </div>
+              <i class="fa-solid fa-bars"></i>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="Reports-on-the-Shafia-platform.html"
-                  >Reports</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="General-Settings.html"
-                  >Setting</a
-                >
-              </li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="left">
+                  <i class="fa-regular fa-bell"></i>
+
+                  <div class="nav-achivement">
+                    <img src="mida/clup.png" alt="" /> <span>انجازاتي</span>
+                  </div>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="img/user.png" alt="" /> <span>أحمد أمجد</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="seting-acount.html">
+                          اعدادات الحساب
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
         <!-- =========== ? NavBar =========== -->
@@ -184,20 +228,20 @@
                       </div>
                     </button>
                     <button
-                    class="nav-link"
-                    id="My-achievements-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#My-achievements"
-                    type="button"
-                    role="tab"
-                    aria-controls="My-achievements"
-                    aria-selected="false"
-                  >
-                    <div class="seting">
-                        <i class="fa-solid fa-trophy"></i>
-                      <h5>انجازاتي</h5>
-                    </div>
-                  </button>
+                      class="nav-link"
+                      id="My-achievements-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#My-achievements"
+                      type="button"
+                      role="tab"
+                      aria-controls="My-achievements"
+                      aria-selected="false"
+                    >
+                      <div class="seting">
+                        <i class="fa-solid fa-circle-play setii"></i>
+                        <h5>انجازاتي</h5>
+                      </div>
+                    </button>
                     <button
                       class="nav-link"
                       id="v-pills-messages-tab"
@@ -243,12 +287,52 @@
                         <h5>الاشعارات</h5>
                       </div>
                     </button>
-                    <button class="nav-link" type="button">
+                    <button
+                      class="nav-link"
+                      id="v-pills-My-points-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-My-points"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-My-points"
+                      aria-selected="false"
+                    >
+                      <div class="seting">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h5>نقاطي</h5>
+                      </div>
+                    </button>
+                    <button
+                      class="nav-link"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#out"
+                    >
                       <div class="seting">
                         <i class="fa-solid fa-right-from-bracket out"></i>
                         <h5>تسجيل الخروج</h5>
                       </div>
                     </button>
+                  </div>
+                  <div class="modal" id="out" tabindex="-1">
+                    <div class="modal-dialog out">
+                      <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body out">
+                          <h4>هل تريد تسجيل الخروج؟</h4>
+
+                          <button type="submit" class="btn PrimaryButton">
+                            تأكيد
+                          </button>
+
+                          <button type="submit" class="btn PrimaryButton">
+                            الغاء
+                          </button>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-9 col-md-7 col-12">
@@ -289,7 +373,7 @@
                         <!--uplod img  -->
 
                         <div class="col-lg-7 col-md-10 col-10">
-                          <div class="form-group">
+                          <div class="form-group setiting">
                             <input
                               type="text"
                               class="form-control"
@@ -591,136 +675,139 @@
                       </div>
                     </div>
                     <!-- My-achievements -->
-                    <div class="tab-pane fade" id="My-achievements" role="tabpanel" aria-labelledby="My-achievements-tab" tabindex="0">
-                       <div class="container">
+                    <div
+                      class="tab-pane fade"
+                      id="My-achievements"
+                      role="tabpanel"
+                      aria-labelledby="My-achievements-tab"
+                      tabindex="0"
+                    >
+                      <div class="container">
                         <div class="row">
-                            <div class="col-lg-8 col-md-12 col-12">
-                             <div class="comti">
-                                <h4>كل الإنجازات</h4>
-                             </div>
+                          <div class="head-tab">
+                            <h6>الإنجازات</h6>
+                          </div>
+                          <div class="col-lg-8 col-md-12 col-12">
+                            <div class="comti">
+                              <h4>كل الإنجازات</h4>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-12">
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-secondary dropdown-toggle set"
-                                  type="button"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
+                          </div>
+                          <div class="col-lg-4 col-md-12 col-12">
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-secondary dropdown-toggle set"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
                                 الانجازات الجديدة
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a
-                                      class="dropdown-item"
-                                      href="#"
-                                      >الانجازات المنتهية</a
-                                    >
-                                  </li>
-                                </ul>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >الانجازات المنتهية</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-12">
+                            <div class="crad-lesson-set">
+                              <div class="img-lesson"></div>
+                              <div class="parnt-card-lesson">
+                                <div class="text-card-lesson">
+                                  <p>قرآن كريم</p>
+                                  <h4>
+                                    واجب علي الجزء الاول من سورة البقرة بالتجويد
+                                    و تسميع من الاية 1 حتي 12
+                                  </h4>
+                                </div>
+                                <div class="lasts">
+                                  <div class="las">
+                                    <div class="lesson-last-card">
+                                      <img src="mida/small pic.png" alt="" />
+                                      <h3>الشيخ:أحمد عبد الملك</h3>
+                                    </div>
+                                    <div class="lesson-last-1-card">
+                                      <i class="fa-solid fa-table-list"></i>
+                                      <h6>عدد الأسألة: 8</h6>
+                                    </div>
+                                  </div>
+                                  <div class="botton-lesson">
+                                    <button type="button" class="btn inside">
+                                      بدأ الواجب
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="row">
-                            <div class="col-lg-6 col-md-12 col-12">
-                                <div class="crad-lesson-set">
-                                    <div class="img-lesson">
-                                      
+                          <div class="col-lg-6 col-md-12 col-12">
+                            <div class="crad-lesson-set">
+                              <div class="img-lesson"></div>
+                              <div class="parnt-card-lesson">
+                                <div class="text-card-lesson">
+                                  <p>قرآن كريم</p>
+                                  <h4>
+                                    واجب علي الجزء الاول من سورة البقرة بالتجويد
+                                    و تسميع من الاية 1 حتي 12
+                                  </h4>
+                                </div>
+                                <div class="lasts">
+                                  <div class="las">
+                                    <div class="lesson-last-card">
+                                      <img src="mida/small pic.png" alt="" />
+                                      <h3>الشيخ:أحمد عبد الملك</h3>
                                     </div>
-                                    <div class="parnt-card-lesson">
-                                      <div class="text-card-lesson">
-                                        <p>قرآن كريم</p>
-                                        <h4>
-                                            واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
-                                        </h4>
-                                      </div>
-                                      <div class="lasts">
-                                        <div class="las">
-                                          <div class="lesson-last-card">
-                                            <img src="mida/small pic.png" alt="" />
-                                            <h3>الشيخ:أحمد عبد الملك</h3>
-                                          </div>
-                                          <div class="lesson-last-1-card">
-                                            <i class="fa-solid fa-table-list"></i>
-                                            <h6>عدد الأسألة: 8</h6>
-                                          </div>
-                                        </div>
-                                        <div class="botton-lesson">
-                                          <button type="button" class="btn inside">
-                                            بدأ الواجب
-                                          </button>
-                                        </div>
-                                      </div>
+                                    <div class="lesson-last-1-card">
+                                      <i class="fa-solid fa-table-list"></i>
+                                      <h6>عدد الأسألة: 8</h6>
                                     </div>
                                   </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-12">
-                                <div class="crad-lesson-set">
-                                    <div class="img-lesson">
-                                      
-                                    </div>
-                                    <div class="parnt-card-lesson">
-                                      <div class="text-card-lesson">
-                                        <p>قرآن كريم</p>
-                                        <h4>
-                                            واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
-                                        </h4>
-                                      </div>
-                                      <div class="lasts">
-                                        <div class="las">
-                                          <div class="lesson-last-card">
-                                            <img src="mida/small pic.png" alt="" />
-                                            <h3>الشيخ:أحمد عبد الملك</h3>
-                                          </div>
-                                          <div class="lesson-last-1-card">
-                                            <i class="fa-solid fa-table-list"></i>
-                                            <h6>عدد الأسألة: 8</h6>
-                                          </div>
-                                        </div>
-                                        <div class="botton-lesson">
-                                          <button type="button" class="btn inside">
-                                            بدأ الواجب
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <div class="botton-lesson">
+                                    <button type="button" class="btn inside">
+                                      بدأ الواجب
+                                    </button>
                                   </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-12">
-                                <div class="crad-lesson-set">
-                                    <div class="img-lesson">
-                                      
-                                    </div>
-                                    <div class="parnt-card-lesson">
-                                      <div class="text-card-lesson">
-                                        <p>قرآن كريم</p>
-                                        <h4>
-                                            واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
-                                        </h4>
-                                      </div>
-                                      <div class="lasts">
-                                        <div class="las">
-                                          <div class="lesson-last-card">
-                                            <img src="mida/small pic.png" alt="" />
-                                            <h3>الشيخ:أحمد عبد الملك</h3>
-                                          </div>
-                                          <div class="lesson-last-1-card">
-                                            <i class="fa-solid fa-table-list"></i>
-                                            <h6>عدد الأسألة: 8</h6>
-                                          </div>
-                                        </div>
-                                        <div class="botton-lesson">
-                                          <button type="button" class="btn inside">
-                                            بدأ الواجب
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                       </div>
-                         
+                          <div class="col-lg-6 col-md-12 col-12">
+                            <div class="crad-lesson-set">
+                              <div class="img-lesson"></div>
+                              <div class="parnt-card-lesson">
+                                <div class="text-card-lesson">
+                                  <p>قرآن كريم</p>
+                                  <h4>
+                                    واجب علي الجزء الاول من سورة البقرة بالتجويد
+                                    و تسميع من الاية 1 حتي 12
+                                  </h4>
+                                </div>
+                                <div class="lasts">
+                                  <div class="las">
+                                    <div class="lesson-last-card">
+                                      <img src="mida/small pic.png" alt="" />
+                                      <h3>الشيخ:أحمد عبد الملك</h3>
+                                    </div>
+                                    <div class="lesson-last-1-card">
+                                      <i class="fa-solid fa-table-list"></i>
+                                      <h6>عدد الأسألة: 8</h6>
+                                    </div>
+                                  </div>
+                                  <div class="botton-lesson">
+                                    <button type="button" class="btn inside">
+                                      بدأ الواجب
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <!-- massage -->
                     <div
@@ -863,7 +950,7 @@
                               class="form-control"
                               placeholder="كلمة المرور الجديدة"
                             />
-                            <i class="fa-solid fa-lock"></i>
+                            <i class="fa-solid fa-lock-open set"></i>
                           </div>
                           <button type="button" class="btn btn-success">
                             حفظ
@@ -923,6 +1010,25 @@
                         </div>
                       </div>
                     </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-My-points"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-My-points-tab"
+                    >
+                      <div class="head-tab">
+                        <h6>نقاطي</h6>
+                      </div>
+                      <div class="main-super">
+                        <div class="text-poin">
+                          <h4>نقاطك الحالية</h4>
+                          <h3>2,500 نقطة</h3>
+                        </div>
+                        <div class="super">
+                          <img src="mida/super.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
                     <!-- log out -->
                     <!-- <div
                   class="tab-pane fade"
@@ -937,38 +1043,34 @@
               </div>
             </div>
           </div>
-          
         </div>
         <!--uplod img   -->
-    <script>
-        function readURL(input) {
-          if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-              $("#imagePreview").css(
-                "background-image",
-                "url(" + e.target.result + ")"
-              );
-              $("#imagePreview").hide();
-              $("#imagePreview").fadeIn(650);
-            };
-            reader.readAsDataURL(input.files[0]);
+        <script>
+          function readURL(input) {
+            if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                $("#imagePreview").css(
+                  "background-image",
+                  "url(" + e.target.result + ")"
+                );
+                $("#imagePreview").hide();
+                $("#imagePreview").fadeIn(650);
+              };
+              reader.readAsDataURL(input.files[0]);
+            }
           }
-        }
-        $("#imageUpload").change(function () {
-          readURL(this);
-        });
-      </script>
-      <!-- uplod img  -->
+          $("#imageUpload").change(function () {
+            readURL(this);
+          });
+        </script>
+        <!-- uplod img  -->
 
         <script src="js/main.js"></script>
         <!-- counter -->
         <script src="js/counterup.min.js"></script>
         <script src="js/waypoints.min.js"></script>
-       
-       
       </section>
     </div>
-   
   </body>
 </html>
