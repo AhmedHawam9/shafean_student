@@ -167,8 +167,8 @@ svg.svg-inline--fa.fa-lock.new {
 }
 svg.svg-inline--fa.fa-phone.nas-t {
   position: absolute;
-  top: 85px;
-  right: 15px;
+  top: 74px;
+  right: 12px;
   color: #575a598f;
 }
 svg.svg-inline--fa.fa-user.wel-s {
@@ -185,8 +185,8 @@ svg.svg-inline--fa.fa-lock.wel-a {
 }
 svg.svg-inline--fa.fa-envelope.nas-k {
   position: absolute;
-  top: 145px;
-  right: 15px;
+  top: 133px;
+  right: 12px;
   color: #575a598f;
 }
 .modal-body.wel {
@@ -365,6 +365,10 @@ nav.navbar.lets {
   align-items: center;
   display: flex;
   box-shadow: -1px 1px 3px #00000024;
+  justify-content: space-between;
+}
+img.logo-shaf {
+  width: 5%;
 }
 .beell {
   display: flex;
@@ -831,6 +835,7 @@ button.btn.btn-secondary.dropdown-toggle :hover {
 }
 .main-quran h4 {
   font-family: "bold";
+  margin-top:23px;
 }
 .low-card {
   display: flex;
@@ -1945,6 +1950,12 @@ button.btn.PrimaryButton:hover{
   align-items: center;
   margin: 0 2rem;
 }
+svg#lockIcon2 {
+  top: 10px;
+}
+svg#lockIcon3 {
+  top: 11px;
+}
 .img-nav .collapse .left svg {
   color: #656565;
   width: 20px;
@@ -2089,19 +2100,50 @@ div#out {
     padding-right: 31px;
   }
   .img-librar img {
-    width: 90%;
-    margin-right: 115px;
+    width: 100%;
+
 }
 a.img-librar-1 img {
-  width: 60%;
-  margin-right: 115px;
+  width: 100%;
+ 
 }
 
 li.nav-item.navlib a {
   font-size: 0.5rem;
 }
+.sidebar li.nav-item img {
+  width: 30%;
+}
+.crad-test {
+  margin-top: 25px;
+}
+.card.quran-card {
+  border-radius: 40px;
+}
+.card.quran-card-1 {
+  border-radius: 40px;
+}
+.content-contest h4 {
+  margin-top: 18px;
+}
+.cards-cont img {
+  margin-top: 15px;
+}
+.cards-reder img {
+  margin-top: 15px;
+}
+.crad-lesson {
+  margin-top: 40px;
+}
+.img-lesson img {
+  width: 70%;
+}
+.lasts {
+  justify-content: space-between;
+}
 
 }
+
 @media only screen and (max-width: 600px) {
   .sidebar.open .nav-pills .nav-item .nav-link span {
     font-size: 0.4rem;
@@ -2125,6 +2167,7 @@ li.nav-item.navlib a {
   }
   .text-log {
     margin-top: 1rem;
+    
   }
   .text-log p {
     font-size: 0.7rem;
@@ -2155,6 +2198,7 @@ li.nav-item.navlib a {
     border-radius: 20px;
     padding: 0.4rem;
     font-size: 0.7rem;
+ 
   }
   .link {
     margin-top: 25px;
@@ -2168,13 +2212,13 @@ li.nav-item.navlib a {
   }
   svg.svg-inline--fa.fa-phone.nas-t {
     position: absolute;
-    top: 64px;
+    top: 57px;
     right: 7px;
     color: #575a598f;
   }
   svg.svg-inline--fa.fa-envelope.nas-k {
     position: absolute;
-    top: 109px;
+    top: 99px;
     right: 7px;
     color: #575a598f;
     font-size: 0.8rem;
@@ -2447,6 +2491,9 @@ nav.navbar.lets {
 }
 button#dropdownMenuButton1 {
   color: white;
+}
+svg#lockIcon1 {
+  top: 12px;
 }
 }
 
