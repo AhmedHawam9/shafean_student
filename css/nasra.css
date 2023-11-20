@@ -978,6 +978,7 @@ iframe {
   background-image: url(../mida/bababa.png);
   padding: 2rem;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .lesson {
   margin-top: 5rem;
@@ -2020,7 +2021,13 @@ svg.svg-inline--fa.fa-circle-play.setii {
 div#out {
   z-index: 111111111111111111;
 }
-
+p.group {
+  color: white;
+  background-color: red;
+}
+input.form-control {
+  text-align: right !important;
+}
 /* responsev */
 @media only screen and (max-width: 1500px) {
   .sidebar {
