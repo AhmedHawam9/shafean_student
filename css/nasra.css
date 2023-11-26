@@ -2028,6 +2028,85 @@ p.group {
 input.form-control {
   text-align: right !important;
 }
+.table_details .filters, .index_cards .content .table_data .filters {
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+svg.svg-inline--fa.fa-magnifying-glass.search-1 {
+  position: absolute;
+  top: 31px;
+  right: 10px;
+}
+.table_details {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  margin-top: 15px;
+}
+button.btn.btn-danger.clear {
+  display: block;
+  margin-inline-start: auto;
+  font-family: "regular";
+  transition: 0.7s;
+}
+button.btn.btn-danger.clear:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+table#table {
+  font-family: 'regular';
+  font-size: 0.8rem;
+}
+.head-name {
+  font-family: 'semibold';
+}
+.shape-table {
+  background-color: white;
+  border-radius: 10px;
+}
+.shape-table .search-table {
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+h4.h4 {
+  font-family: 'regular';
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+table.table {
+  font-family: 'regular';
+  font-size: 0.8rem;
+}
+table tbody .true {
+  color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00ad80;
+  padding: 0.2rem;
+}
+table tbody .false {
+  color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #df3034;
+  padding: 0.2rem;
+}
+ul#submenuWebsite-1 li a{
+  color: #00000044;
+  font-size: 0.9rem;
+}
 /* responsev */
 @media only screen and (max-width: 1500px) {
   .sidebar {
@@ -2152,6 +2231,9 @@ li.nav-item.navlib a {
 }
 
 @media only screen and (max-width: 600px) {
+  .main-work {
+    margin-top: 10px;
+  }
   .sidebar.open .nav-pills .nav-item .nav-link span {
     font-size: 0.4rem;
   }

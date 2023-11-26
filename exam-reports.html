@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/nasra.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>الانجازات</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+       
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+        <li class="nav-item">
+          <img src="mida/شفيعا1.png" alt="" />
+        </li>
+          <li class="nav-item">
+            <a href="let's-go.html" class="nav-link align-middle">
+              <i class="fa-solid fa-house"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Educational-library.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book"></i>
+              <span>المكتبة التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Electronic-reader.html" class="nav-link align-middle">
+              <i class="fa-solid fa-video"></i>
+              <span>المقرأة الالكترونية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="the-exams.html" class="nav-link align-middle">
+              <i class="fa-solid fa-file-contract"></i>
+              <span>الاختبارات</span>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="Contests.html" class="nav-link align-middle">
+              <i class="fa-solid fa-tarp-droplet"></i>
+              <span>المسابقات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Achievements.html" class="nav-link align-middle">
+              <i class="fa-solid fa-list-check"></i>
+              <span>الانجازات</span>
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>نبذة عنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>الاخبار</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-regular fa-message"></i>
+              <span>تواصل معنا</span>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="https://ahmedhawam9.github.io/sheafen_web/" class="nav-link align-middle">
+              <i class="fa-solid fa-globe"></i>
+                            <span>الموقع الالكتروني</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenuWebsite-1"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+           
+            <i class="fa-brands fa-stack-exchange"></i>           
+               <span>التقارير</span>
+           
+            </a>
+          </li>
+          
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-1"
+              data-bs-parent="#menu"
+            >
+             
+              <li>
+                <a href="Achievements-reprts.html" class="nav-link">
+                  <span>تقارير الأنجازات</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="table-home.html"
+                  class="nav-link"
+                >
+                  <span>تقارير الحضور والأنصراف</span></a
+                >
+              </li>
+              <li>
+                <a href="exam-reports.html" class="nav-link">
+                  <span>تقارير الأمتحانات</span></a
+                >
+              </li>
+              <li>
+                <a href="competition-reports.html" class="nav-link">
+                  <span>تقارير المسابقات</span></a
+                >
+              </li>
+              <li>
+                <a href="behaviorl-reports.html" class="nav-link">
+                  <span>تقارير السلوكيه</span></a
+                >
+              </li>
+              <li>
+                <a href="acadimy-reports.html" class="nav-link">
+                  <span>تقارير الاكادميه</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="setiting.html" class="nav-link align-middle">
+                <i class="fa-solid fa-gear"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle" data-bs-toggle="modal"
+            data-bs-target="#out">
+              <i class="fa-solid fa-right-from-bracket out"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar lets">
+          <div class="menuu">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div class="beell">
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-bell"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">جداول الدروس</a>
+                  <a class="dropdown-item" href="#">تواقيت الاختبارات</a>
+                  <a class="dropdown-item" href="#">تواقيت المسابقة</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="img-text">
+                  <img src="mida/user.png" class="admin_img" alt="person" />
+                  <h4>أمجد عمر الخالدي</h4>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="seting-acount.html"
+                    >اعدادات الحساب
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="General-Settings.html"
+                    >Setting</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="content-main-lib">
+          
+          <div class="all">
+            <div class="container">
+                <div class="head-name">تقارير الأمتحانات</div>
+                <div class="table_details">
+                  <!-- Start filters -->
+                  <div class="filters">
+                    <div class="form-group">
+                        <i class="fa-solid fa-magnifying-glass search-1"></i>
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="ابحث باسم , الطالب......."
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input type="date" class="form-control">
+                      </div>
+      
+                    <!-- <div class="form-group">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="daterange"
+                        value=""
+                      />
+                      <script>
+                        $(function () {
+                          $('input[name="daterange"]').daterangepicker(
+                            {
+                              opens: "left",
+                            },
+                            function (start, end, label) {
+                              console.log(
+                                "A new date selection was made: " +
+                                  start.format("YYYY-MM-DD") +
+                                  " to " +
+                                  end.format("YYYY-MM-DD")
+                              );
+                            }
+                          );
+                        });
+                      </script>
+                    </div> -->
+                  </div>
+                  <!-- End filters -->
+    
+                  <div class="table-responsive">
+                    <table class="table" id="table">
+                      <thead>
+                        <tr class="trAltCizgi">
+                          <th><input class="box" type="checkbox" /></th>
+                          <th class="th">اسم الطالب</th>
+                          <th class="th">الانجاز</th>
+                          <th class="th">تاريخ الانجاز</th>
+                          <th class="th">الحالة</th>
+                          <th class="th"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="tbody">
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="th"><input class="box" type="checkbox" /></td>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-success">
+                            <i class="fa-regular fa-circle-check text-success"></i
+                            >تم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="details_exam.html"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="details_student.html"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+    
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="th"><input class="box" type="checkbox" /></td>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-danger">
+                            <i class="fa-regular fa-circle-xmark text-danger"></i>لم
+                            يتم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="details_exam.html"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="details_student.html"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+    
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="th"><input class="box" type="checkbox" /></td>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-success">
+                            <i class="fa-regular fa-circle-check text-success"></i
+                            >تم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="details_exam.html"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="details_student.html"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+    
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="th"><input class="box" type="checkbox" /></td>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-danger">
+                            <i class="fa-regular fa-circle-xmark text-danger"></i>لم
+                            يتم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="details_exam.html"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="details_student.html"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="btn btn-danger clear">حذف المحدد</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="end-page">
+          <div class="container">
+            <div class="made">
+              <p>كل الحقوق محفوظة@شفيعا 2022</p>
+              <p>
+                Made with by <img src="mida/hurt.png" alt="" /><a
+                  href="https://crazyideaco.com/"
+                  >Crazy Idea</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="out" tabindex="-1">
+          <div class="modal-dialog out">
+             <div class="modal-content">
+              <div class="modal-header">
+           </div>
+          <div class="modal-body out">
+          <h4>هل تريد تسجيل الخروج؟</h4>
+
+          <button type="submit" class="btn PrimaryButton">تأكيد </button>
+
+          <button type="submit" class="btn PrimaryButton">الغاء</button>
+          </div>
+
+      <div class="modal-footer"></div>
+      </div>
+      </div>
+           </div>
+        <!-- For loop this card child -->
+
+        <!-- ======= Chart onload =========== -->
+        <script src="js/main.js"></script>
+        <script src="js/counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+      </section>
+    </div>
+  </body>
+</html>
