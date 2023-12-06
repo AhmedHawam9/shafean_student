@@ -30,6 +30,10 @@ body {
 }
 
 /* Work-container-login */
+.menu {
+  margin-right: 10px;
+  cursor: pointer;
+}
 section.ath {
   height: 100vh;
   display: flex;
@@ -2045,6 +2049,7 @@ svg.svg-inline--fa.fa-magnifying-glass.search-1 {
   padding: 1rem;
   border-radius: 14px;
   margin-top: 15px;
+  min-width: 1000px;
 }
 button.btn.btn-danger.clear {
   display: block;
@@ -2067,6 +2072,7 @@ table#table {
 .shape-table {
   background-color: white;
   border-radius: 10px;
+  min-width: 1000px;
 }
 .shape-table .search-table {
   display: flex;
