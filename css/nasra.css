@@ -1939,6 +1939,7 @@ button.btn.PrimaryButton:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 .end-page .made a {
   color: black;
@@ -2083,6 +2084,10 @@ table#table {
 }
 h4.h4 {
   font-family: 'regular';
+}
+img.img-footer {
+  width: 130x;
+  height:90px;
 }
 .filters {
   display: flex;
