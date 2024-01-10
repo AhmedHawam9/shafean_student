@@ -2118,6 +2118,35 @@ ul#submenuWebsite-1 li a{
   color: #00000044;
   font-size: 0.9rem;
 }
+.end-page {
+  background-color: #eceae7;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: -10px;
+  width: calc(100% - 15%);
+}
+.text-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.text-footer p {
+  font-family: "bold";
+  margin-bottom: 0;
+}
+.text-footer a {
+  color: #000;
+  text-decoration: none;
+}
+.alltet {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.alltet img {
+  width: 6%;
+}
 /* responsev */
 @media only screen and (max-width: 1500px) {
   .sidebar {
@@ -2594,6 +2623,19 @@ button#dropdownMenuButton1 {
 }
 svg#lockIcon1 {
   top: 12px;
+}
+.end-page {
+  width: 100%;
+  position: relative;
+}
+.text-footer {
+  flex-wrap: wrap;
+}
+.alltet {
+  flex-wrap: wrap;
+}
+.alltet img {
+  width: 19%;
 }
 }
 
