@@ -1934,13 +1934,43 @@ button.btn.PrimaryButton:hover{
   background-image: url(../mida/fot.png);
 
 }
- .made {
-  font-family: "regular";
+.end-page {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0 !important;
+  width: calc(100% - 15%);
+}
+.text-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
+.text-footer p {
+  font-family: "bold";
+  margin-bottom: 0;
+}
+.text-footer a {
+  color: #000;
+  text-decoration: none;
+}
+.alltet {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 65%;
+}
+.alltet img {
+  width: 6%;
+}
+.slogn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+ 
 .end-page .made a {
   color: black;
   text-decoration: none;
@@ -2266,6 +2296,16 @@ li.nav-item.navlib a {
 }
 .lasts {
   justify-content: space-between;
+}
+.alltet {
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+.end-page{
+  width: 100%;
+}
+.alltet img {
+  width: 10%;
 }
 
 }
@@ -2632,10 +2672,20 @@ svg#lockIcon1 {
   flex-wrap: wrap;
 }
 .alltet {
-  flex-wrap: wrap;
+  display: block;
+  gap: unset;
+}
+.alltet p {
+  font-size: 0.7rem;
 }
 .alltet img {
   width: 19%;
+}
+.text-footer p {
+  font-size: 0.7rem;
+}
+.slogn {
+  gap: unset;
 }
 }
 
